@@ -31,29 +31,18 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "My Project",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Welcome to my portfolio! Explore captivating photos showcasing my project. Each image is a unique slide and reflects my passion for my work.",
+    url: "https://ibb.co/album/N9tFxZ",
   },
   {
-    title: "Web Development for Beginners",
+    title: "My Resume",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "As a skilled computer science student, I am eager to find a challenging role that focuses on software programming. I aim to leverage my experience in programming and problem solving to create innovative solutions while also pursuing personal and professional growth.",
+    url: "https://ibb.co/8dk6Dbb",
   },
-  {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-  },
+  
 ];
 
 const Portfolio = () => {
@@ -72,9 +61,9 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h2 style={{ flexBasis: "20px" }}>{project.title}</h2>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="midium">{project.description}</p>
             </div>
           ))}
         </div>
